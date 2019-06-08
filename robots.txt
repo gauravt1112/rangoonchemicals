@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /beta/
+sitemap: http://www.rangoonchemicals.com/sitemap.xml

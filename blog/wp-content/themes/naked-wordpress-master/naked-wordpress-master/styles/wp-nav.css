@@ -1,0 +1,44 @@
+@media only screen and (min-width: 480px) {
+/* == INTERMEDIATE: Menu == */
+#navigation-wrapper, nav ul a, nav ul {
+width:75%;
+font-size:82%;
+}
+nav ul {
+width:90%;
+}
+nav a, .next-post a{
+float:left;
+margin:0 1%;
+padding:5px 1%;
+margin-bottom:0;
+}
+nav li:first-child a{
+margin-left:0;
+}
+nav li:last-child  a{
+margin-right:0;
+}
+/* == INTERMEDIATE: IE Fixes == */
+nav ul li{
+display:inline;
+}
+}
+nav{
+width:100%;
+float:left;
+background:#e44d26;
+margin-bottom:9px;
+padding:5px 0px 5px 0px;
+}
+nav select {
+display: none;
+}
+@media (max-width: 960px) {
+nav ul     {
+display: none;
+}
+nav select {
+display: inline-block;
+}
+}

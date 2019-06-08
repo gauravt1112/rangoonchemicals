@@ -1,0 +1,9 @@
+#cboxOverlay{background:#ffffff;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{background:#fff; padding:5px; }
+        #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+        #cboxLoadingOverlay{background:#fff;}
+        #cboxTitle{position:absolute; bottom:-70px; left:0; font-size:13px; line-height:17px; color:#6d6e70;}
+        #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+        #cboxClose{ background: url(images/close2.png) no-repeat left top; width: 30px; height: 30px; right: -70px; top: -70px; position: absolute;}
