@@ -1,0 +1,294 @@
+<?php
+  $activeMenu = "distributors";
+?>
+
+    <!DOCTYPE html>
+<html>
+  <head>
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57525553-1', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
+</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <meta name="viewport" content="width=1110, initial-scale=1">
+	<meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/960.css" rel="stylesheet" type="text/css"/>
+    <link href="css/colorbox.css" rel="stylesheet" type="text/css"/>
+    <link href="css/selectbox.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/home_colorbox.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('input[type="radio"]').click(function(){
+            if($(this).attr("value")=="yes"){
+                $(".partner-details").show();
+            }
+            if($(this).attr("value")=="no"){
+                $(".partner-details").hide();
+            }
+        });
+    });
+</script>
+
+  </head>
+  <div class="top-space">
+		
+	</div>
+<body>
+<div id="wrapper">
+  <div id="main">
+     <div class="scroll-up"> <a href="#top"><img src="images/back-to-top.png" style="width: 70%;"/></a></div>
+ 
+  <div id="push-menu">
+    <div id="header">
+	<div id="menu_container">
+        <div id="logo"><a href="index.php"><img src="images/rangoon-chemicals-footer-logo-new.png" alt="Rangoon Chemicals - Manufacturer of Ayurvedic Medicines, Tonics & Drugs, Balm, Flying Balm, Flying Tiger Cub Balm & Oil Balm"></a></div>
+        <div id="facebook-header"><a href="https://www.facebook.com/rangoonchemicals" target="_blank"><img src="images/facebook-header.png" alt="facebook-header" class="pop"></a></div>
+			<div class="container_12">
+            <ul id="menu">    
+              <li>
+                <a href="index.html" class='active'>HOME</a>      
+              </li>
+              <li>
+                <a href="about-us.html" class='active'>ABOUT US</a>   
+              </li>
+              <li>
+                <a href="products.html" class='active'>PRODUCTS</a>     
+              </li>
+              <li>
+                <a href="distributors.html" class='active'>DISTRIBUTORS</a>
+              </li>
+              <li>
+                <a href="where-to-buy.html" class='active'>WHERE TO BUY</a>
+              </li>
+              <li>
+                <a href="http://www.rangoonchemicals.com/blog/" class='active'>BODY CARE</a>
+              </li>
+              <li>
+                <a href="press.html" class='active'>PRESS</a>
+              </li>
+              <li style="margin-right:0px;">
+                <a href="contact-us.html" class='active'>CONTACT US</a>
+              </li>
+            </ul>
+			</div>
+	</div>
+	
+    </div>
+
+    <div id="content">
+    <div class="container_12">
+	
+	<div id="about-heading" style="margin-bottom:40px;">Essential Required Details<span class="req_symbol">*</span></div>
+	<form name="distributor_form" id="distributor_form" action="form_submit_distributor.php" method="post">
+	
+	<div id="distributor-row">
+	<div id="left-col">Full Name</div>
+	<div id="right-col"><input type="text" name="principal-full-name" class="required"></div>
+	</div>
+	<div id="distributor-row">
+	<div id="left-col">Company Name</div>
+	<div id="right-col"><input type="text" name="principal-company-name" class="required"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Email</div>
+	<div id="right-col-2"><input type="text" name="principal-Email" class="required email"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Tel</div>
+	<div id="right-col-3"><input type="text" name="principal-Tel" class="required number"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">State</div>
+	<div id="right-col-2"><input type="text" name="principal-State"  class="required"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Country of Operation</div>
+	<div id="right-col"><input type="text" name="principal-Operation-Country"  class="required"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">State of Operation</div>
+	<div id="right-col-2"><input type="text" name="principal-Operation-State"  class="required"></div>
+	</div>
+	
+	<div id="about-heading" class="optional-info" style="margin-bottom:40px;">Optional Information <img src="images/arrow-down-optional.png"></div>
+	
+	<div class="optional" style="display:none;">
+	<div id="distributor-row">
+	<div id="left-col"></div>
+	<div id="right-col-2"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col" style="margin-top:30px;">Website</div>
+	<div id="right-col-2" style="margin-top:30px;"><input type="text" name="Website"></div>
+	</div>
+	
+	<div id="about-heading" style="margin-bottom:40px;">Mailing Address</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Street Address</div>
+	<div id="right-col"><input type="text" name="Mailing-Street-Address"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Building</div>
+	<div id="right-col-2"><input type="text" name="Mailing-Building"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Suite</div>
+	<div id="right-col-2"><input type="text" name="Mailing-Suite"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">City</div>
+	<div id="right-col-3"><input type="text" name="Mailing-City"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">State</div>
+	<div id="right-col-2"><input type="text" name="Mailing-State"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Postal Code or Zip</div>
+	<div id="right-col-3"><input type="text" name="Mailing-Postal-Code"></div>
+	</div>
+	
+	<div id="distributor-bottom"></div>
+	
+		<div id="about-heading" style="margin-bottom:40px;">Ownership Information</div>
+		
+	<div id="distributor-row">
+	<div id="left-col">Please Select Business Type</div>
+	<div id="right-col">
+	<input type="radio" class="regular-checkbox" name="Ownership-Business-Type" value="Sole Ownership" /><div id="checkbox-text">Sole Ownership</div>
+	<input type="radio" class="regular-checkbox" name="Ownership-Business-Type" value="Corporation" /><div id="checkbox-text">Corporation</div>
+	<input type="radio" class="regular-checkbox" name="Ownership-Business-Type" value="Other" /><div id="checkbox-text">Other</div>
+	</div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Name of Owner</div>
+	<div id="right-col-4">
+	<input type="text" name="Ownership-First-Name" placeholder="First Name" >
+	<input type="text" name="Ownership-Middle-Name" placeholder="Middle Name" >
+	<input type="text" name="Ownership-Last-Name" placeholder="Last Name" >
+	</div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Residential Address</div>
+	<div id="right-col"><input type="text" name="Ownership-Residential-Address"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">City</div>
+	<div id="right-col-3"><input type="text" name="Ownership-City"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">State</div>
+	<div id="right-col-2"><input type="text" name="Ownership-State"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Postal Code or Zip</div>
+	<div id="right-col-3"><input type="text" name="Ownership-Postal-Code"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Tel</div>
+	<div id="right-col-3"><input type="text" name="Ownership-Tel"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Partners</div>
+	<div id="right-col">
+	<input type="radio" name="Ownership-partner" class="regular-checkbox" value="yes" /><div id="checkbox-text" >Yes</div>
+	<input type="radio"  name="Ownership-partner" class="regular-checkbox" value="no" /><div id="checkbox-text" >No</div>
+	</div>
+	</div>
+	
+	<div class="partner-details" style="display:none;">
+	<div id="distributor-row">
+	<div id="left-col">Partner's Name</div>
+	<div id="right-col-4">
+	<input type="text" name="partner-First-Name" placeholder="First Name" >
+	<input type="text" name="partner-Middle-Name" placeholder="Middle Name" >
+	<input type="text" name="partner-Last-Name" placeholder="Last Name" >
+	</div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Partner's Residential Address</div>
+	<div id="right-col"><input type="text" name="partner-Address"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">City</div>
+	<div id="right-col-3"><input type="text" name="partner-City"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">State</div>
+	<div id="right-col-2"><input type="text" name="partner-State"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Postal Code or Zip</div>
+	<div id="right-col-3"><input type="text" name="partner-Postal-Code"></div>
+	</div>
+	
+	<div id="distributor-row">
+	<div id="left-col">Tel</div>
+	<div id="right-col-3"><input type="text" name="partner-Tel"></div>
+	</div>
+	</div>
+	</div>
+	
+	
+	<div id="distributor-row">
+	<div id="left-col" style="margin-top:30px;"></div>
+	<div id="right-col" style="margin-top:30px;"><input type="submit" value="SUBMIT"></div>
+	</div>
+	</form>
+
+	
+	</div>
+	</div>
+
+    </div>
+<div id="footer">
+	Copyright 2014 Rangoon Chemical Works Pvt. Ltd. All rights reserved. &nbsp; | &nbsp; Crafted by <a href="http://www.togglehead.in/" target="_blank"  rel="nofollow">Togglehead</a> &nbsp; | &nbsp; Site Map
+</div>
+
+  </div>
+</div>
+    <script type="text/javascript" src="js/jquery.1.8.2.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+    <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="js/jquery.selectbox.js"></script>
+    <script type="text/javascript" src="js/form_validation.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.accordion.min.js"></script>
+	<script type="text/javascript" src="js/cloud-zoom.1.0.2.js"></script>
+</body>
+</html>
